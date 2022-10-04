@@ -3,4 +3,4 @@ az login
 az group create --name ResourceGroup-kube --location westeurope
 az acr create --resource-group ResourceGroup-kube --name acr-kube --sku Basic
 
-az aks create --resource-group ResourceGroup-kube --name AKSCluster --node-count 2 --generate-ssh-keys --attach-acr ltmacrmsv4
+az aks create --resource-group ResourceGroup-kube --name AKSCluster --node-count 2 --generate-ssh-keys --attach-acr acr-kube
